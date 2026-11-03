@@ -2,7 +2,7 @@
 
 Enter a GitHub username and get a profile card with top repos and recent activity (top 5), and main languages.
 
-**Live demo link:**
+**Live demo link:** https://builder-github-card.onrender.com
 
 ## # Features ->
 
