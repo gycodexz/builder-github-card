@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  color: #1f2328;
+}
+
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.subtitle {
+  color: #656d76;
+  margin-top: 0;
+}
+
+#search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#username-input {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* The `hidden` attribute must win over any display rule */
+[hidden] {
+  display: none !important;
+}
+
+.status {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #ddf4ff;
+}
+
+.status.error {
+  background: #ffebe9;
+  color: #82071e;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile h2 {
+  margin: 0;
+}
+
+.profile p {
+  margin: 0.25rem 0 0;
+}
+
+#avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 0.4rem;
+}
+
+.empty {
+  color: #656d76;
+  list-style: none;
+}
+
+.legend {
+  list-style: none;
+  padding-left: 0;
+}
+
+.language-bar {
+  display: flex;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  background: #eaeef2;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}

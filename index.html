@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builder Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Builder Card</h1>
+    <p class="subtitle">Enter a GitHub username to generate a profile card.</p>
+
+    <form id="search-form">
+      <input id="username-input" type="text" placeholder="e.g. torvalds" autocomplete="off" required>
+      <button id="submit-btn" type="submit">Generate</button>
+    </form>
+
+    <p id="status" class="status" hidden></p>
+
+    <section id="card" class="card" hidden>
+      <div class="profile">
+        <img id="avatar" src="" alt="Profile avatar">
+        <div>
+          <h2 id="name"></h2>
+          <a id="login" target="_blank" rel="noopener"></a>
+          <p id="bio"></p>
+        </div>
+      </div>
+
+      <ul class="stats">
+        <li><strong id="followers"></strong> followers</li>
+        <li><strong id="following"></strong> following</li>
+        <li><strong id="repo-count"></strong> repos</li>
+      </ul>
+
+      <h3>Top repos</h3>
+      <ul id="repo-list" class="list"></ul>
+
+      <h3>Main languages</h3>
+      <div id="language-bar" class="language-bar"></div>
+      <ul id="language-list" class="list legend"></ul>
+
+      <h3>Recent activity</h3>
+      <ul id="activity-list" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
