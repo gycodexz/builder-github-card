@@ -21,6 +21,7 @@ The website shows the following things:-
 ## # Tech ->
 - **HTML** and **CSS** for structure and UI
 - **Vanilla JavaScript** for responsiveness and logic.
+- **GitHub REST API** for fetching profile data.
 ---
 Data comes from the public Github REST API in app.js file (`/users/{u}`, `/users/{u}/repos`, `/users/{u}/events/public`).
 
@@ -44,6 +45,3 @@ One submit handler with `try/catch/finally` block.
 - Only the first 100 repos are analysed.
 - Language stats count repos by primary language, not bytes of code.
 - Next step: a small serverless proxy with a token to raise the rate limit.
-
-## Time taken
-1 hour 30 minutes
